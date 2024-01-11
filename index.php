@@ -19,9 +19,8 @@
 <body>
   <div id="app" v-cloak>
     <ul>
-      <li v-for='student in students'>
-        <div>{{student.nome}}</div>
-        <div>{{student.cognome}}</div>
+      <li v-for='album in cds'>
+        <div>{{album.titolo}}</div>
       </li>
     </ul>
   </div>

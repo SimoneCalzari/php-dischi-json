@@ -1,18 +1,62 @@
 [
   {
-    "nome": "Simone",
-    "cognome": "Calzari"
+    "titolo": "Sgt. Pepper's Lonely Hearts Club Band",
+    "info": {
+      "artista": "The Beatles",
+      "pubblicazione": "1 Giugno 1967",
+      "durata": "39:43",
+      "tracce": "13",
+      "produttore": "George Martin"
+    }
   },
   {
-    "nome": "Lorenzo",
-    "cognome": "Morani"
+    "titolo": "Pet Sounds",
+    "info": {
+      "artista": "The Beach Boys",
+      "pubblicazione": "16 maggio 1966",
+      "durata": "36:25",
+      "tracce": "13",
+      "produttore": "Brian Wilson"
+    }
   },
   {
-    "nome": "Laura",
-    "cognome": "Morani"
+    "titolo": "Revolver",
+    "info": {
+      "artista": "The Beatles",
+      "pubblicazione": "5 agosto 1966",
+      "durata": "35:27",
+      "tracce": "14",
+      "produttore": "George Martin"
+    }
   },
   {
-    "nome": "Francesca",
-    "cognome": "Calzari"
+    "titolo": "Highway 61 Revisited",
+    "info": {
+      "artista": "Bod Dylan",
+      "pubblicazione": "30 agosto 1965",
+      "durata": "51:37",
+      "tracce": "9",
+      "produttore": "Bob Johnston"
+    }
+  },
+  {
+    "titolo": "Rubber Soul",
+    "info": {
+      "artista": "The Beatles",
+      "pubblicazione": "3 dicembre 1965",
+      "durata": "36:16",
+      "tracce": "14",
+      "produttore": "George Martin"
+    }
+  },
+  {
+    "titolo": "What's Going On",
+    "info": {
+      "artista": "Marvin Gaye",
+      "pubblicazione": "21 maggio 1971",
+      "durata": "35:28",
+      "tracce": "9",
+      "produttore": "Marvin Gaye"
+    }
   }
 ]

@@ -3,14 +3,14 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
-      students: [],
+      cds: [],
       urlApi: "server.php",
     };
   },
   methods: {
     getDisks() {
       axios.get(this.urlApi).then((response) => {
-        this.students = response.data;
+        this.cds = response.data;
       });
     },
   },
