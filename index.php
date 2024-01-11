@@ -24,17 +24,25 @@
           <!-- CARDS CONTAINER -->
           <div class="cards">
             <!-- CARD -->
-            <div class="card" v-for="cd in cds">
+            <div class="card" v-for="cd in cds" @click="clickCard(cd.id)" @mouseleave="currentId = null">
               <!-- FRONT CARD -->
-              <div class="card-front">
+              <div class="card-front" v-if="currentId !== cd.id">
                 <div class="cover">
-                  <img :src="'src/img/' + cd.img" alt="">
+                  <img :src="'src/img/' + cd.img" :alt="cd.titolo">
                 </div>
                 <h3>{{ cd.titolo }}</h3>
               </div>
               <!-- /FRONT CARD -->
               <!-- BACK CARD -->
-              <div class="card-back"></div>
+              <div class="card-back" v-else>
+                <ul>
+                  <li>{{ currentCd.info.artista }}</li>
+                  <li>{{ currentCd.info.pubblicazione }}</li>
+                  <li>{{ currentCd.info.durata }}</li>
+                  <li>{{ currentCd.info.tracce }}</li>
+                  <li>{{ currentCd.info.produttore }}</li>
+                </ul>
+              </div>
               <!-- /BACK CARD -->
             </div>
             <!-- /CARD -->
