@@ -1,6 +1,7 @@
 [
   {
     "titolo": "Sgt. Pepper's Lonely Hearts Club Band",
+    "img": "SgtPeppersLonelyHeartsClubBand.jpg",
     "info": {
       "artista": "The Beatles",
       "pubblicazione": "1 Giugno 1967",
@@ -11,6 +12,7 @@
   },
   {
     "titolo": "Pet Sounds",
+    "img": "PetSounds.jpg",
     "info": {
       "artista": "The Beach Boys",
       "pubblicazione": "16 maggio 1966",
@@ -21,6 +23,7 @@
   },
   {
     "titolo": "Revolver",
+    "img": "Revolver.jpg",
     "info": {
       "artista": "The Beatles",
       "pubblicazione": "5 agosto 1966",
@@ -31,6 +34,7 @@
   },
   {
     "titolo": "Highway 61 Revisited",
+    "img": "Highway61Revisited.jpg",
     "info": {
       "artista": "Bod Dylan",
       "pubblicazione": "30 agosto 1965",
@@ -41,6 +45,7 @@
   },
   {
     "titolo": "Rubber Soul",
+    "img": "RubberSoul.jpg",
     "info": {
       "artista": "The Beatles",
       "pubblicazione": "3 dicembre 1965",
@@ -51,6 +56,7 @@
   },
   {
     "titolo": "What's Going On",
+    "img": "WhatsGoingOn.jpg",
     "info": {
       "artista": "Marvin Gaye",
       "pubblicazione": "21 maggio 1971",
