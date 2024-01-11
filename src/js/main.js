@@ -5,16 +5,18 @@ createApp({
     return {
       cds: [],
       urlApi: "server.php",
-      currentId: null,
+      currentId: 0,
       currentCd: {},
     };
   },
   methods: {
+    // funzione per richiedere tutt gli album
     getDisks() {
       axios.get(this.urlApi).then((response) => {
         this.cds = response.data;
       });
     },
+    // funzione per richiedere solo un album specifico
     clickCard(id) {
       this.currentId = id;
       const currentApi = this.urlApi + "?id=" + id;
@@ -24,6 +26,7 @@ createApp({
     },
   },
   created() {
+    // chiamata dei dati alla creazione dell applicazione
     this.getDisks();
   },
 }).mount("#app");

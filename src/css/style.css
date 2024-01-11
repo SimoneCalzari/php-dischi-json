@@ -41,7 +41,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
-  margin: 30px 0;
+  margin: 40px 0;
 }
 
 .card {
@@ -72,6 +72,12 @@ main {
 .card-back ul li {
   font-size: 14px;
   margin-bottom: 10px;
+}
+
+.card-back ul li span {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 img {

@@ -36,20 +36,8 @@
               <!-- BACK CARD -->
               <div class="card-back" v-else>
                 <ul>
-                  <li>
-                    <span>Artista:</span> {{ currentCd.info.artista }}
-                  </li>
-                  <li>
-                    <span>Data Pubblicazione:</span> {{ currentCd.info.pubblicazione }}
-                  </li>
-                  <li>
-                    <span>Durata:</span> {{ currentCd.info.durata }}
-                  </li>
-                  <li>
-                    <span>Numero tracce:</span> {{ currentCd.info.tracce }}
-                  </li>
-                  <li>
-                    <span>Produttore:</span> {{ currentCd.info.produttore }}
+                  <li v-for="(value, key) in currentCd.info">
+                    <span>{{ key }}:</span> {{ value }}
                   </li>
                 </ul>
               </div>
