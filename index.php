@@ -22,9 +22,9 @@
       <main>
         <div class="container">
           <!-- CARDS CONTAINER -->
-          <div class="cards">
+          <div class="cards" @mouseleave="currentId = 0">
             <!-- CARD -->
-            <div class="card" v-for="cd in cds" @click="clickCard(cd.id)" @mouseleave="currentId = null">
+            <div class="card" v-for="cd in cds" @click="clickCard(cd.id)">
               <!-- FRONT CARD -->
               <div class="card-front" v-if="currentId !== cd.id">
                 <div class="cover">
@@ -36,11 +36,21 @@
               <!-- BACK CARD -->
               <div class="card-back" v-else>
                 <ul>
-                  <li>{{ currentCd.info.artista }}</li>
-                  <li>{{ currentCd.info.pubblicazione }}</li>
-                  <li>{{ currentCd.info.durata }}</li>
-                  <li>{{ currentCd.info.tracce }}</li>
-                  <li>{{ currentCd.info.produttore }}</li>
+                  <li>
+                    <span>Artista:</span> {{ currentCd.info.artista }}
+                  </li>
+                  <li>
+                    <span>Data Pubblicazione:</span> {{ currentCd.info.pubblicazione }}
+                  </li>
+                  <li>
+                    <span>Durata:</span> {{ currentCd.info.durata }}
+                  </li>
+                  <li>
+                    <span>Numero tracce:</span> {{ currentCd.info.tracce }}
+                  </li>
+                  <li>
+                    <span>Produttore:</span> {{ currentCd.info.produttore }}
+                  </li>
                 </ul>
               </div>
               <!-- /BACK CARD -->

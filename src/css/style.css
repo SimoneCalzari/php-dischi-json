@@ -14,13 +14,13 @@
 
 header {
   height: 70px;
-  background-color: rgb(0, 0, 0, 0.96);
+  background-color: black;
   display: flex;
 }
 
 h1 {
   text-transform: uppercase;
-  color: #e50914;
+  color: white;
   font-size: 40px;
   margin: auto;
   font-weight: 500;
@@ -62,6 +62,16 @@ main {
 
 .card-back {
   height: 100%;
+}
+
+.card-back ul {
+  list-style-type: none;
+  padding: 30px;
+}
+
+.card-back ul li {
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
 img {
