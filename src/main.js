@@ -7,9 +7,14 @@ createApp({
       urlApi: "server.php",
     };
   },
+  methods: {
+    getDisks() {
+      axios.get(this.urlApi).then((response) => {
+        this.students = response.data;
+      });
+    },
+  },
   created() {
-    axios.get(this.urlApi).then((response) => {
-      this.students = response.data;
-    });
+    this.getDisks();
   },
 }).mount("#app");

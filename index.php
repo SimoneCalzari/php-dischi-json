@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <div id="app">
+  <div id="app" v-cloak>
     <ul>
       <li v-for='student in students'>
         <div>{{student.nome}}</div>

@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
-ul {
+[v-cloak] {
+  display: none;
+}
+
+body {
   padding: 30px;
 }

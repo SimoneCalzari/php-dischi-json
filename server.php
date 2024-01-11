@@ -1,24 +1,11 @@
 <?php
 
-$students = [
-  [
-    'nome' => 'Simone',
-    'cognome' => 'Calzari'
-  ],
-  [
-    'nome' => 'Lorenzo',
-    'cognome' => 'Morani'
-  ],
-  [
-    'nome' => 'Laura',
-    'cognome' => 'Morani'
-  ],
-  [
-    'nome' => 'Patrizia',
-    'cognome' => 'Corsello'
-  ],
-];
+$data = file_get_contents('database.json');
+$students = json_decode($data, true);
+
+/*
+cose da fare sui dati
+*/
 
 header('Content-Type: application/json');
-
 echo json_encode($students);
