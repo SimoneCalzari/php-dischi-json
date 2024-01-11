@@ -1,5 +1,6 @@
 <?php
 
+// header('Location: server.php');
 
 ?>
 
@@ -17,6 +18,12 @@
 
 <body>
   <div id="app">
+    <ul>
+      <li v-for='student in students'>
+        <div>{{student.nome}}</div>
+        <div>{{student.cognome}}</div>
+      </li>
+    </ul>
   </div>
   <!-- VUE -->
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
