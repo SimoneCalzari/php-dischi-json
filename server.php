@@ -3,6 +3,8 @@
 $data_json = file_get_contents('database.json');
 // traduco i dati in linguaggio comprensibile da php
 $data_php = json_decode($data_json, true);
+// salvo il dato in una variabile che poi andrò ad elaborare con i vari filtri
+$result = $data_php;
 
 // caso in cui ho un query parameters id nella richiesta
 if (!empty($_GET['id'])) {
@@ -13,11 +15,11 @@ if (!empty($_GET['id'])) {
     // condizione sull'id 
     if ($cd['id'] === $id) {
       // salvo l'array associativo (album) nella variabile che andrò a inviare 
-      $data_php = $cd;
+      $result = $cd;
     }
   }
 }
 // indico che la risposta alla richiesta sarà in formato json
 header('Content-Type: application/json');
 // restituisco il dato richiesto in lingua json
-echo json_encode($data_php);
+echo json_encode($result);
