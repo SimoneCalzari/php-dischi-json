@@ -19,10 +19,14 @@ createApp({
     // funzione per richiedere solo un album specifico
     clickCard(id) {
       this.currentId = id;
-      const currentApi = this.urlApi + "?id=" + id;
-      axios.get(currentApi).then((response) => {
-        this.currentCd = response.data;
-      });
+      // const currentApi = this.urlApi + "?id=" + id;
+      // axios.get(currentApi).then((response) => {
+      //   this.currentCd = response.data;
+      // });
+      axios.get(this.urlApi, {params: {
+        id: this.currentId
+      }}).then((response) => {
+          this.currentCd = response.data;})
     },
   },
   created() {
